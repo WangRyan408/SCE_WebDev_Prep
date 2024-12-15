@@ -1,0 +1,13 @@
+
+
+#table-header {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.table-object {
+    max-width: 200px;
+    margin: auto;
+}
