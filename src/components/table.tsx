@@ -29,23 +29,23 @@ function Table({data}: TableProps) {
             <table id="table-data">
                 <thead>
                     <tr>
-                        <th className="table-object">Open Price</th>
-                        <th className="table-object">High Price</th>
-                        <th className="table-object">Low Price</th>
-                        <th className="table-object">Current Price</th>
-                        <th className="table-object">Previous Close Price</th>
-                        <th className="table-object">Time</th>
+                        <th className="table-header">Open Price</th>
+                        <th className="table-header">High Price</th>
+                        <th className="table-header">Low Price</th>
+                        <th className="table-header">Current Price</th>
+                        <th className="table-header">Previous Close Price</th>
+                        <th className="table-header">Time</th>
                     </tr>
                 </thead>
                 <tbody>
                     {data.map((key:any, index:any) => (
                         <tr key={index}>
-                            <td>{key.o}</td>
-                            <td>{key.h}</td>
-                            <td>{key.l}</td>
-                            <td>{key.c}</td>
-                            <td>{key.pc}</td>
-                            <td>{key.time}</td>
+                            <td className="table-object">{key.o}</td>
+                            <td className="table-object">{key.h}</td>
+                            <td className="table-object">{key.l}</td>
+                            <td className="table-object">{key.c}</td>
+                            <td className="table-object">{key.pc}</td>
+                            <td className="table-object">{key.time}</td>
                         </tr>
                     ))}
                 </tbody>

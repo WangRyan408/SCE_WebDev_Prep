@@ -15,7 +15,8 @@
 #stockInput {
   display: flex;
   flex-direction: row;
-  margin: auto;
+ /* margin: 0 auto; */
+  justify-self: center;
 }
 
 #stockInput > input {
